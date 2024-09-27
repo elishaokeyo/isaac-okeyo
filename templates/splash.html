@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splash</title>
+     <!-- css suporting files  -->
+     <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/files/css/lightslider.css">
+     <link rel="stylesheet" href="../static/files/css/style.css">
+     
+     <!-- js surporting files  -->
+     <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+     <script src="../static/files/js/jquery.js"></script>
+     <script src="../static/files/js/lightslider.js"></script>
+     <script src="../static/files/js/script.js"></script>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: #1b2227;
+            
+        }
+        .loader{
+            height: 20em;
+            width: 20em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            position: absolute;
+            height: 80%;
+            width: 80%;
+            border-radius: 120%;
+            border-style:solid;
+
+        }
+        .video{
+            position: relative;
+            content: normal;
+        }
+        .white{
+            border-width: 3px 3px 0 0;
+            border-color: white white transparent;
+            animation:0.7s rotate-white linear infinite;
+        }
+        .red{
+            border-width: 0 0 3px 3px;
+            border-color: transparent transparent rgb(165, 5, 19);
+            animation: 0.7s rotate-red linear infinite;
+        }
+        .orange{
+            border-width: 0 3px 3px 0;
+            border-color: transparent orange orange transparent;
+            animation: 0.7s rotate-orange linear infinite;
+        }
+        .yellow{
+            border-width: 3px 0 0 3px;
+            border-color: #00ff0d transparent transparent;
+            animation: 0.7s rotate-yellow linear infinite;
+        }
+        
+        @keyframes rotate-white{
+            from{
+                transform: rotateX(45deg) rotateY(-35deg);
+
+            }
+            to{
+                transform: rotate(45deg) rotateY(-35deg);
+            }
+        }
+        @keyframes rotate-red{
+            from{
+                transform: rotateX(45deg) rotateY(35deg);
+
+            }
+            to{
+                transform: rotate(45deg) rotateY(35deg);
+            }
+        }
+        @keyframes rotate-orange{
+            from{
+                transform: rotateX(70deg) rotatez(0deg);
+
+            }
+            to{
+                transform: rotate(70deg) rotatez(360deg);
+            }
+        }
+        @keyframes rotate-yellow{
+            from{
+                transform: rotateX(70deg) rotatey(-35deg);
+
+            }
+            to{
+                transform: rotate(70deg) rotatez(360deg);
+            }
+        }
+        .spin {
+            display: inline-block;
+            animation: spinY 10s alternate linear infinite;
+        }
+    
+        @keyframes spinY {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+        
+        
+
+
+
+    </style>
+    <br><br><script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../movie.css">
+
+</head>
+<body>
+    <b><h1 class="text-success spin">EXPLORE....KENYA</h1></b>
+    
+    <!-- <video autoplay muted loop id="kVideo" class="spin vide0">
+       <source src="../istockphoto-1393059871-640_adpp_is.mp4" type="video/mp4">
+    </video>
+   <br><br> -->
+    <div class="loader">
+        <div class="circle white"></div>
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <a href='/register' class="nav-item nav-link spin">SIGHN IN</a>
+    
+    
+</body>
+</html>

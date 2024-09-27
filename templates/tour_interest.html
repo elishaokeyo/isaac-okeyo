@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour_interest</title>
+     <!-- css suporting files  -->
+     <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/files/css/lightslider.css">
+     <link rel="stylesheet" href="../static/files/css/style.css">
+ 
+     <!-- js supporting files  -->
+     <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+     <script src="../static/files/js/jquery.js"></script>
+     <script src="../static/files/js/lightslider.js"></script>
+     <script src="../static/files/js/script.js"></script>
+ 
+    <link rel="stylesheet" href="../static/files/css/bootstrap.css">
+    <link rel="stylesheet" href="../movie.css">
+    <video autoplay muted loop id="kVideo">
+        <source src="../static/images/mov_bbb.mp4" type="video/mp4">
+        
+    </video>
+</head>
+<body>
+    {% include "navbar.html" %}
+
+    <div class="container-fluid">
+
+    <section class="row mt-5">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow img-thumbnail">
+                <div class="card-body bg-warning">
+                  <h2 class="text-success">create a tourist account</h2>
+                 <form action="/tour_interest" method="post">
+                <input type="text" name="firstname" placeholder="your first name" required id="" class="form-control">
+                <br>
+                <input type="text" name="lastname" placeholder="your last name" id="" class="form-control">
+                <br>
+                <input type="text" name="country" placeholder=" your country" id="" class="form-control">
+                <br>
+                <input type="password" name="password1" placeholder="Your password" id="" class="form-control">
+                <br>
+                <input type="password" name="password2" placeholder="confirm password" id="" class="form-control">
+                <br>
+                <input type="tel" name="phone" placeholder=" phone +254711702602" id="" class="form-control"><br>
+                <input type="email" name="email" placeholder="enter email"  class="form-control"><br>
+                <input type="date" name="date" placeholder="date of visit"  class="form-control"><br>
+                <input type="submit" value="add to tourists" class="btn btn-primary"><br><br>
+                  </form>
+              </div>
+           </div>
+           <div class="col-md-3">
+        </div>
+
+            
+        </div>
+    </section>
+    
+</div>
+{%include "footer.html"%}
+</body>
+</html>

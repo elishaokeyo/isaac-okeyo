@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>culture</title>
+     <!-- css suporting files  -->
+     <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/files/css/lightslider.css">
+     <link rel="stylesheet" href="../static/files/css/style.css">
+ 
+     <!-- js surporting files  -->
+     <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+     <script src="../static/files/js/jquery.js"></script>
+     <script src="../static/files/js/lightslider.js"></script>
+     <script src="../static/files/js/script.js"></script>
+
+    <style>
+
+        img{
+
+            transition: 1s;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .spin {
+            display: inline-block;
+            animation: spinY 5s alternate linear infinite;
+        }
+    
+        @keyframes spinY {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+        
+        
+    </style>
+     <script src="../static/files/css/bootstrap.css"></script>
+     <link rel="stylesheet" href="../movie.css">
+
+     <video autoplay muted loop id="kVideo">
+        <source src="../static/images/mov_bbb.mp4" type="video/mp4">
+     </video>
+     
+     
+     
+     
+
+</head>
+<body class="">
+    <div class="container-fluid">
+      {% include "navbar.html" %} 
+      
+
+            <!-- CARD SECTION  -->
+            <CEnter><h4>communities</h4></CEnter>
+            <section class="row">
+
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                          <img src="../static/images/maasai.jpg" alt="" width="96%" height="155px">
+                            <h2>maasai</h2>
+                            <P> this community are mainly cattle keepers found on the lowlands and fond of moving with their cattles through many plains insearch for greener pasture hence most of them had only temporary buildings due to their short time stay while they graze their animals. they keep large numbers of cattles with them </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/luo.jpg" alt="" width="96%" height="179px" class="spin">
+                            <h2>luo</h2>
+                            <P> this community is believed to have come come from south sudan in a place known as barelgazar. they are mostly located near water bodies due to their habitual way of living that is fully dependent on fishing to earn their source of income. they are known for their courage.  </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/Et8pPdCWYAIWikw.jpg" alt="" width="96%" height="153px">
+                            <h2>kikuyu</h2>
+                            <P> this community is located in central kenya near mount  kenya. thier present location is due to thier habitual way of life that is fully dependent on agriculture hence they had to look for places with consistent rainfall to support their crops which was thier main source of income as well as their staple food.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/EUKwEBeUMAAtvkV.jpg" alt="" width="96%" height="175px" class="spin">
+                            <h2>nandi</h2>
+                            <P>these people are cattle keepers who are located in most highlands in the country where there is sufficient rainfall to provide pasture for their livestocks. they are fond of keeping many cows that can sum upto a half a million cows as a source of pride in the community hence gained them respect.  </P>
+                        </div>
+                    </div>
+                </div>
+            </section><br><br>
+            <section class="row">
+
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                          <img src="../static/images/istockphoto-1124512385-170667a.jpg" alt="" width="96%" height="174px">
+                            <h2>giriama</h2>
+                            <P>this comunity is mainly found in coastal kenya and are well known for their magical dances that atract fellors from every part of the earth. they are also known for their beautiful girls who atract men from every corner of the earth. </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                            <img src="../static/images/DSC0589.jpg" alt="" width="96%" class="spin" height="174px">
+                            <h2>turkana</h2>
+                            <P>this communnity is located in the northern part of kenya and are fond of keeping large heards of animals as a source of income though the region is very dry making it hard for them and their livestock to nourishe well hence migrate i relation to seasons. </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                            <img src="../static/images/1683812953838.jpg" alt="" width="96%" height="174px">
+                            <h2>teso</h2>
+                            <P> this communty members live in some kenyan highlands and also involve in cattle keeping hence they in most cases fully dependent on those cattle as their sorce of income. they give alot of cattles during marriages to wifes family</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                            <img src="../static/images/bantu.jpg" alt="" class="spin" width="96%" height="170px">
+                            <h2>bantu</h2>
+                            <P>most of the bantus are located in western kenya. they are mostly depent on crop farming enabling them to grow crops in larger portions and use their excess in trade inorder to acqure other neccesities of life and keep some as remedy when drought strikes them. </P>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+            <section class="row" >
+
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                        <img src="../static/images/tumblr_mp1gybWt4y1rqkjy0o3_1280.jpg" alt="" width="96%" height="176px">
+                          <h2>somali</h2>
+                          <P>these men are believed to be immigrants from the neighbouring country of sudan. they are more popular due to their consistency in trade clothings while traveling long distances with their camels loaded with items of trade</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                          <img src="../static/images/unnamed.jpg" alt="" width="96%" height="176px" class="spin">
+                          <h2>kisii</h2>
+                          <P> this a subtribe of the bantu found in nyanza province and are mostly involved in crop farming where their main staple foods is bananas. their population is not too large but are mostly popular because of the language that they speak.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                          <img src="../static/images/127534276_174404767728326_3950930441294472669_n.jpg" alt="" width="96%" height="176px">
+                          <h2>pokomo</h2>
+                          <P> this community is found in central part of kenya and are mainly involved in crop cultivation and livestock keepinng making their lives to be bearable all the seasons so they have better alternatives during drought or floods hence rarely face had times.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                          <img src="../static/images/lamu-maulidi-festivals.jpg" alt="" width="96%" height="155px" class="spin">
+                          <h2>duruma</h2>
+                          <P>this community is setlled at coast of kenya and famous of their breewing abilities that are extracted from coconut fruits and trees in a specialised manner making their drinks to be healthy and famous among its users and customers who believes in the drinks. </P>
+                      </div>
+                  </div>
+              </div>
+            </section><br><br><br>
+            <section class="row">
+
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                        <img src="../static/images/gusii.jpg" alt="" width="96%" height="180px">
+                          <h2>gusii</h2>
+                          <P>these are kenyans located in kenyan highlands in nyanza province. their main source of income is crop faring due to high rainfall amounts that support growth of crops in all seasons of the year. though they are few they impact alot to kenyas econoy by providing regular food supply to the countrys markets.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/twitter.jpg" alt="" width="96%" height="225px" class="spin">
+                          <h2>maragoli</h2>
+                          <P>these are part of luhya community but isolated due to different cultural practices. they are friendly people in bussiness who ensures every partys interest in the bussiness. i like their involvement in business due to yheir determination</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/Luhya.webp" alt="" width="96%" height="225px">
+                          <h2>luhya</h2>
+                          <P>these people  are found in the western part of kenya. they are well known for maize farming in large quantities due to thier fertile lands and sufficient rainfall in their area of residence this quality has been passed down to their generations. </P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/977296d5f6d103e6295914bd2388a522.jpg" alt="" class="spin" width="96%" height="203px">
+                          <h2>njemps</h2>
+                          <P>these are under nilotic classificatrion termed to have migrated from southern part of sudan into kenya though were pastoralists hence ended up occupying most of the plainy areas in kenya to enable easy movement of their households and cattles in relation to seasons. </P>
+                      </div>
+                  </div>
+              </div>
+            </section><br><br><br>
+            <section class="row">
+
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                      <img src="../static/images/f985c4118f866626d9a30080af551a4f.jpg" alt="" width="96%" height="178px">
+                        <h2>kalenjins</h2>
+                        <P>this a clan of kenyans athletes who have for all time gained fortune for our country. thier athletics ability is due to settlement in highlands hence adopted to low oxygen thus they find it more easier in other areas. they too have reliable supply of milk that boost their strength</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                        <img src="../static/images/kuria1.jpg" alt="" width="96%" height="178px" class="spin">
+                        <h2>kuria</h2>
+                        <P> this community is located in the border of kenya and tanzania but mostly settled in kenyan side. they are sweet potatoe growers that thrives in kenyan markets and potatoe factories situated in migori county to be the outlet of their porducts hence earn them money for their use in other factors.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                        <img src="../static/images/nubian-culture-and-traditions-trips-in-egypt.jpg" alt="" width="96%" height="178px">
+                        <h2>cushites</h2>
+                        <P>tis community have a close distinction with the somali though are different for they mostly keep camels only to use them for moving in the sandy deserts. they are all time traders in kenya by importing those goods from overseas and to supply the locals hence better interaction with communities .</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                        <img src="../static/images/240px-Image_of_Hindu_Havan_taking_place_at_Hindu_Union.jpg" class="spin" alt="" width="96%" height="178px">
+                        <h2>hindus</h2>
+                        <P>these are asimilated indians into kenyan residence mainly on kenyan coastal regions as they made severals trade trips to kenya and intermingled with kenyans making the emmergence of of the tribe in kenya. though they are few they are good in trade hence their success </P>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+
+            <br>
+
+        </div>
+        <section class="row bg-success p-4 text-light">
+            <div class="col-md-4">
+                <h2> About ELISHA</h2>
+                <p>look for a good job to lead a successful life full of fun so that you can be graet.</p>
+                <p>good work comes with challenges which you must face</p>
+            </div>
+            <div class="col-md-4">
+                <form action="">
+                <h2> CONTACT HIM</h2>
+                <input type="email" placeholder="enter email" class="form-control"><br><br>
+                <textarea name="" id="" cols="15" rows="5" placeholder="leave a comment" class="form-control"></textarea><br>
+                <button class=" btn bg-danger text-light">send a message</button>
+                <b class="text-success">{{msg}}</b>
+                
+            </div>
+            </form>
+            <div class="col-md-4 text-dark"> 
+            <h2 class="text-light"> SITES TO LOCATE HIM</h2>
+                 <img src="../static/images/fb.png" alt=" facebook" class="spin">
+                 <img src="../static/images/in.png" alt="instagram" class="spin">
+                 <img src="../static/images/x.png" alt="x" class="spin">
+                 <img src="../static/images/Untitled.png" class="spin" alt="tiktok" width="60px" height="60px">
+                    <p> kindly use any of this apps to make you work easier and have full information about the recent trends undertaken by elisha on his carrier development</p>
+                </div>
+        </section>
+        <footer class="p-4 text-center bg-dark text-light"> <b>Developed by elisha.&copy;2024.All Rights Reserved </b></footer>
+
+            
+ 
+
+
+    </div>                                   
+</body>
+</html>

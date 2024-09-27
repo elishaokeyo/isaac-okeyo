@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/files/css/bootstrap.css">
+</head>
+<body background="../static/images/6511cd9a0679c_com.truecaller-384x384.png">
+    {% include "navbar.html" %}
+    
+    <div class="container-fluid"> 
+        
+        <section class="row mt-5">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+               <div class="card shadow img-thumbnail">
+                    <div class="card-body bg-warning">
+
+                      <form action="/logout" method="post">
+                        <fieldset>
+                          <legend class="text-primary">logout of the account</legend>
+                          <input type="tel" name="phone" placeholder="enter phone number" required id="" class="form-control">
+                          <br>
+                        <br>
+                          <input type="password" name="password" placeholder="enter password" id="" class="form-control">
+                          <br>
+                          <input type="submit" value="logout" class="btn btn-primary">
+                          <br><br>
+                        </fieldset>
+                      </form>
+            
+                      <b class="text-danger">{{error}}</b>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+            
+        </section>
+        
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br>
+    {%include "footer.html"%}
+</body>
+</html>

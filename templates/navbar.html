@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    
+    
+</head>
+<body>
+    <!-- <h1> this is navbar page</h1> -->
+   <section class="row">
+        <div class="col-md-12">
+           <nav class="navbar navbar-expand-md navbar-light btn-light p-1">
+                   <a href='' class="navbar-brand">EXPLORE..<b class="text-success">KENYA</b></a>
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                       <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                   <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+
+                             <a href='/index' class="nav-item nav-link">Home</a>
+                             <a href='/culture' class="nav-item nav-link">culture</a>
+                             <a href='/education' class="nav-item nav-link">education</a>
+                             <a href='/entertainment' class="nav-item nav-link">entertainment</a>
+                             <a href='/politics' class="nav-item nav-link">politics</a>
+                             <a href='/tourism' class="nav-item nav-link">tourism</a>
+                             <a href='/sports' class="nav-item nav-link">sports</a>
+                             <a href='/religion' class="nav-item nav-link">religion</a>
+
+                             
+                        </div>
+                        
+
+                      <!-- Button trigger modal -->
+                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        upload
+                     </button><br><br>
+                        <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">upload</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/navbar" method="post">
+               <fieldset>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">username</label>
+                    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required id="">
+                    </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="password" placeholder="enter password"  class="form-control" required id="">
+                       
+                  </div>
+                  <div class="mb-3 form-check">
+                     <label class="form-check-label" for="exampleCheck1">phone number</label>
+                     <input type="text" name="phone" placeholder="enter phone number" class="form-control" required id="" >
+                     <div id="emailHelp" class="form-text">We'll never share your contacts with anyone else.</div>
+                  
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+    
+               </fieldset>
+            </form>
+         </div>
+        </div>
+      </div>
+    <br>
+     
+               
+           
+
+   </div><br><br><br><br>
+   <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+   </form>
+
+   <div class="ms-auto navbar-nav">
+      {% if session['key'] %}
+         <b class="text-danger">logged in : {{session["key"]}}</b>
+         <a href="/logout" class="nav-item nav-link">logout</a>
+      {% else %}
+       <!--    TODO Logout-->
+       <a href="/login" class="nav-item nav-link">login</a>
+       <a href="/register" class="nav-item nav-link bg-primary" >register</a>
+      {% endif %}
+   </div>
+
+                   </div>
+           </nav>
+         </div>
+   </section>  
+  
+</body>
+</html>

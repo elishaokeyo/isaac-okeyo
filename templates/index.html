@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+     <!-- css suporting files  -->
+    <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/files/css/lightslider.css">
+    <link rel="stylesheet" href="../static/files/css/style.css">
+
+    <!-- js supporting files  -->
+    <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/files/js/jquery.js"></script>
+    <script src="../static/files/js/lightslider.js"></script>
+    <script src="../static/files/js/script.js"></script>
+
+        
+    <style>
+
+        img{
+
+            transition: 1s;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .spin {
+          display: inline-block;
+          animation: spinY 5s alternate linear infinite;
+      }
+  
+      @keyframes spinY {
+          from {
+              transform: rotateY(0deg);
+          }
+          to {
+              transform: rotateY(180deg);
+          }
+      }
+      
+    </style>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body background="../static/images/kids-elephant-wallpaper-watercolor-_or-nurse_g08kawt2bqx4zn_3d_3d_0.webp">
+
+        <!-- navbar goes here  -->
+         <!-- include navbar  -->
+    <!-- jinja2 template engine  -->
+    <div class="container-fluid">
+        {% include "navbar.html" %}
+        {% include "carousel.html" %}
+
+
+        <!-- cards section  -->
+        <CEnter><h4>kenyan qualities</h4></CEnter>
+        <section class="row">
+
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="../static/images/istockphoto-536684842-1024x1024.webp" alt="" width="90%" height="155px">
+                        <h2>anthem</h2>
+                        <P>this was the anthem composed by the state freedom fighter to motivate them and act as a guide intime of diffuculty that it was the fight to liberate their motherland.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="../static/images/1.jpg" alt="" width="90%" height="155px" class="spin">
+                        <h2>state house</h2>
+                        <P>this is the official residence of the head of state. the buildings are highly secured to protect the president from any untimely attacks by his internal or external enemies.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="../static/images/university 1.jpg" alt="" width="90%" height="155px">
+                        <h2>senate</h2>
+                        <P>this is the meeting point of all the senators of the republic to discuss the matters facing their counties forging out neccessary techniques to curb the problems.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="../static/images/university.png" alt="" width="90%" height="155px" class="spin">
+                        <h2>parliament</h2>
+                        <P>this is the meeting point of all the members of parliament to discuss the governmet decisions and approve them through voting before they are passed </P>
+                    </div>
+                </div>
+            </div>
+        </section><br><br>
+        <center><h2>frequently asked questions</h2></center>
+        <section class="row">
+            <div class="col-md-2">
+                <img src="../static/images/portrait-lion-ai-generated_268835-4278.avif" alt="" width="100%" height="670px">
+
+                
+            </div>
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample1">
+                        
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne0" aria-expanded="false" aria-controls="flush-collapseOne0">
+                                  <b class="text-success">continental geographic location </b>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo0" aria-expanded="false" aria-controls="flush-collapseTwo2">
+                                  <b class="text-success">countries population</b>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree0" aria-expanded="false" aria-controls="flush-collapseThree3">
+                                    <b class="text-success">kenyas GDP</b>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour0" aria-expanded="false" aria-controls="flush-collapsefour0">
+                                    <b class="text-success">the president of kenya</b>
+                                  </button>
+                                </h2>
+                                <div id="flush-collapsefour0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive5" aria-expanded="false" aria-controls="flush-collapsefive5">
+                                    <b class="text-success">political status of kenya by 2024</b>
+                                  </button>
+                                </h2>
+                                <div id="flush-collapsefive5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix0" aria-expanded="false" aria-controls="flush-collapsesix0">
+                                    <b class="text-success">total number of tribes in kenya</b>
+                                  </button>
+                                </h2>
+                                <div id="flush-collapsesix0" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <hr>
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/pexels-photo-326012.jpeg" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/pexels-photo-326012.jpeg" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/pexels-photo-326012.jpeg" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/pexels-photo-326012.jpeg" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        
+                        <br><br><b><hr class="bg bg-warning "></b>
+                        <img src="../static/images/portrait-lion-ai-generated_268835-4278.avif" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/pexels-photo-1661179.jpeg" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/portrait-lion-ai-generated_268835-4278.avif" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/pexels-photo-1661179.jpeg" alt="" width="80px">
+                        <img src="../static/images/shield.png" class="spin" alt="" width="80px">
+                        <img src="../static/images/portrait-lion-ai-generated_268835-4278.avif" alt="" width="80px">
+                        
+                        <br><br>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                         </form>
+ 
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-2">
+
+                <img src="../static/images/pexels-photo-1661179.jpeg" alt="" width="100%" height="670px">
+            </div> 
+        </section>
+        <br><br>
+
+        <section class="row bg-warning p-4">
+                <div class="col-md-4">
+                    <h2> About us</h2>
+                    <p>look for a good job to lead a successful life full of fun so that you can be graet.</p>
+                    <p>good work comes with challenges which you must face</p>
+                </div>
+                <div class="col-md-4">
+                    <form action="">
+                    <h2> contact us</h2>
+                    <input type="email" placeholder="enter email" class="form-control"><br><br>
+                    <textarea name="" id="" cols="15" rows="5" placeholder="leave a comment" class="form-control"></textarea><br>
+                    <button class=" btn bg-danger text-light">send a message</button>
+                </div>
+                </form>
+                <div class="col-md-4 text-dark"> 
+                <h2 class="text-light"> stay connected</h2>
+                     <img src="../static/images/fb.png" class="spin"  alt=" facebook">
+                     <img src="../static/images/in.png" class="spin"  alt="instagram">
+                     <img src="../static/images/x.png" class="spin"  alt="x">
+                     <img src="../static/images/Untitled.png" class="spin" alt="tiktok" width="60px" height="60px">
+                        <p> kindly use any of this apps to make you work easier and have full information about the recent trends in the market</p>
+                    </div>
+        </section>
+        <footer class="p-4 text-center bg-dark text-light"> <b>Developed by elisha.&copy;2024.All Rights Reserved </b></footer>
+            
+            
+            
+            
+            
+    </div>
+
+
+
+        
+</body>
+</html>

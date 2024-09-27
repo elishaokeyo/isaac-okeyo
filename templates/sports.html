@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sports</title>
+     <!-- css suporting files  -->
+     <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/files/css/lightslider.css">
+     <link rel="stylesheet" href="../static/files/css/style.css">
+ 
+     <!-- js surporting files  -->
+     <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+     <script src="../static/files/js/jquery.js"></script>
+     <script src="../static/files/js/lightslider.js"></script>
+     <script src="../static/files/js/script.js"></script>
+    </script>
+    <style>
+
+        img{
+
+            transition: 1s;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .spin {
+            display: inline-block;
+            animation: spinY 5s alternate linear infinite;
+        }
+    
+        @keyframes spinY {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+        
+        
+    </style>
+    
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../movie.css">
+
+    <video autoplay muted loop id="kVideo">
+       <source src="../static/images/mov_bbb.mp4" type="video/mp4">
+    </video>
+   
+    
+</head>
+<body class="">
+    <div class="container-fluid">
+      {% include "navbar.html" %}
+        <!-- carousel goes here  -->
+         <i><marquee behavior="" direction="" class="text-success"><h4>kenyans talents in sports</h4></marquee></i>
+        <section class="row" id="2">
+            <div class="col-md-12">
+                <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
+                   <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/images/dL2_709Yr_l.jpg" alt="image1" class="w-100 d-block" height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/Kenyan-Rugby-Star.jpg" alt="image2" class="d-block w-100" height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/IMG-20210808091919.jpg" alt="image3" class="d-block w-100" height="600px">
+                    </div>
+                   </div>
+        
+                   <!-- carousel controls  -->
+                   <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+                   </a>
+                   <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                   </a>
+                </div>
+            </div>
+            </section><br><br>
+
+            <!-- CARD SECTION  -->
+            
+            <section class="row bg-warning p-2">
+                <CEnter><h4>athletics</h4></CEnter>
+
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-primary">
+                          <img src="../static/images/IMG-20210808091919.jpg" alt="" width="90%" height="180px">
+                            <h2>kipochoge</h2>
+                            <P> this is one of the kenyan all time consistent runner who helped the country to gain alot off gold medals as nhe was always sure of bringing the edals home only rendering other less valued medals to other countries. he used to set and break his own set records all the time he involved in a race.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <img src="../static/images/omanyala.jpg" alt="" width="90%" class="spin" height="225px">
+                            <h2>omanyala</h2>
+                            <P>he is a perfect hundred metre runner with the ability to outstand all other world racers. he runs at a cheaters speed leaving all the audience esmerised due to his all time involvement in vigorous training all days before any competition.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-primary">
+                            <img src="../static/images/213652e0db75e6b4b09c258f2b335ae0.jpg" alt="" width="90%" height="223px">
+                            <h2>kiplimo</h2>
+                            <P> this man is known to have the ability of long distance runs. he is able of strategising a wining combat that enables him to comouflge within other rccesers only to emmerge at the end with unbeliavable speed. this has always benefited him much.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <img src="../static/images/33T46BT-highres-og_image.webp" alt="" class="spin" width="90%" height="225px">
+                            <h2>chepkemboi</h2>
+                            <P>this lady has gained kenya more fortune than any other patriot before for she has always brought back numerous gold medals due to involvement in more than one setpiece during world competitions hosted in foreighn states</P>
+                        </div>
+                    </div>
+                </div>
+            </section><br><br>
+            
+            <section class="row bg-primary p-2">
+                <CEnter><h4>football</h4></CEnter>
+
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                          <img src="../static/images/348426774_2053297875013227_3576475037535486306_n.webp" alt="" width="90%" height="200px">
+                            <h2>ekidasa</h2>
+                            <P> this an is talented among other footballers in kenya and is contracted to play for foreighn countries only to come back in national matches to defend and raise his mothercountry. he is a polite and disciplined player of all time making him to thrive well with other players.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <img src="../static/images/dL2_709Yr_l.jpg" alt="" width="90%" class="spin" height="200px">
+                            <h2>origi</h2>
+                            <P> this player has impacted many lives through their finnancial aid support to the needy children in the streets. he has also introduced a  betting company in keny where most citizens win their fortunes and improve their living standards and to educate their children.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/71cd3181-3da8-448d-8682-05864326a2c9.jpg" alt="" width="90%" height="200px">
+                            <h2>kayata</h2>
+                            <P> this man is a marvellous kenya winger who never misses goals amied at  glorifying his motherland. he is a sincere player who never misses out to pay tax hence is highly reccomended to act as a rollmodel for his fellow players in the football carrier to love their motherland and to give back.
+
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <img src="../static/images/samanta-akinyi_3.png" alt="" class="spin" width="90%" height="200px">
+                            <h2>samanta</h2>
+                            <P>she is one of the recorgnised winger due to her exemplery goal scoring abilities at a go. he gave kenya a win in the match against ethiopia in cup of nations and is now contracted to play for foreign countries and comes back when there is a match to played with kenya.</P>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+            <section class="row bg-danger p-2">
+                <center><h2>rugby</h2></center>
+              <div class="col-md-3 ">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                        <img src="../static/images/Kenya-Rugby.jpg" alt="" width="90%" height="155px">
+                          <h2>wanzala</h2>
+                          <P>wanzala has a well built body that always enables him to challenge his opponents. he is also good in athletics thus boosting his rugby ability. he has always participated in international games that has brought kenya alot of fortune. </P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body">
+                          <img src="../static/images/Kenyan-Rugby-Star.jpg" alt="" width="90%" class="spin" height="155px">
+                          <h2>musioka</h2>
+                          <P>this a luhya with a well build body due to their cultural habit of eating alot of ugali. he has a short height that enables him to manouver most of his opponents with alot of ease hence bringing alot of fortune to the kenyan national rugby team.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/two-kenyan-rugby-players-have-been-charged-with-r-2-7617-1524519199-6_dblbig.jpg" alt="" width="90%" height="155px">
+                          <h2>kibet</h2>
+                          <P>he much dedicated to this game as he involves in vigorous training making always to feature always in the national team throughout the kenyan involvemeent i the international rugby competitions that are always held once in a year. </P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body">
+                          <img src="../static/images/bwbrkzupuz5d9tylin623a3bd51be56.jpg" alt="" width="90%" class="spin" height="155px">
+                          <h2>winnie</h2>
+                          <P>fastest kenyan rugby player for she has always shot out of nowhere as an antelope past all the opponents with the rugby ball making it an easy win for kenya during most of the games hence has impacted alot to the kenyan performance. </P>
+                      </div>
+                  </div>
+              </div>
+            </section><br><br><br>
+            <section class="row bg-info p-2">
+<center><h2>swimming</h2></center>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-danger">
+                        <img src="../static/images/laj2gchbwPumGTWtPhhENCwTKM0RTNN7brI34ah7.jpg" alt="" width="90%" height="155px">
+                          <h2>samuel</h2>
+                          <P>he is the best swimmer who for along time represented kenya in the paralympics. he has for time won multiple number medals for the country thus cotributing alot to the wealth of country. he encourages youths to involve in the game.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body">
+                          <img src="../static/images/1684860091386_FZDytIFaAAADLZ5.jpg" class="spin" alt="" width="90%" height="155px">
+                          <h2>wanjiru</h2>
+                          <P>she is termed as the kenyan fish due to her ability to stay in water for along time making it muh easier for her to dive even much further hence she wins most of the games with alot of ease during the competitions with alot of ease.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-danger">
+                          <img src="../static/images/1700308820781_IMG-20231117-WA0372.jpg" alt="" width="90%" height="155px">
+                          <h2>lineth</h2>
+                          <P> she is a kenyan swimmer who has been involving in the international competitions making her to gain much experience in the swimming sports gaining alot of medals too as other sportsmen representing kenya in extra curriculumn activities. </P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body">
+                          <img src="../static/images/fullsizeoutput_1c23.jpeg" class="spin" alt="" width="90%" height="155px">
+                          <h2>mutiso</h2>
+                          <P>this is one of the experinced kenyan diver who has always partiipated in rescue operations that has always saved lives of many citizens who have always found themselves in difficult situations that could otherwise have claimed their lives.</P>
+                      </div>
+                  </div>
+              </div>
+            </section><br><br><br>
+            <section class="row bg-success p-2">
+                <center><h2>volleyball</h2></center>
+
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-warning">
+                      <img src="../static/images/will.jpg" alt="" width="90%" height="175px">
+                        <h2> williams</h2>
+                        <P> this is a tall man capable of making a scoring strike from the other end of the volley ball pitch without hesitation. he has participted in the game since he was in primary school thus have alot of experience in the game at most time is used by the kenyan team to strike down threatening opponents.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="../static/images/im.jpg" alt="" width="90%" height="175px">
+                        <h2>rachael</h2>
+                        <P> this girl too is a tall kenyan scoring machine for she has always played a role in striking down kenyan opponents within the first service in the game. she has been contracted by foreign teams to play for them and a source of income to help improve her living standards.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-warning">
+                        <img src="../static/images/jane.jpg" alt="" width="90%" height="175px">
+                        <h2>jane</h2>
+                        <P> lineth is a center volleyballer who receives opponents strikes with alot of ease. she has for numerous times involved in compettitions while representing kenya in those games. she has gained the title of best player of the year in those competitions gaining more fortune.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="../static/images/nandi.jpg" alt="" width="90%" height="175px">
+                        <h2>bradley</h2>
+                        <P>bradley is a kenyan volleyballer with much knowledge in volleyball for he also serves as an assistant couch when the authorities are not present. he was also selected by his fellow players as their captain. he is a very disciplined player recommended for contracts due to his determination. </P>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+   <br>
+ 
+
+<section class="row bg-warning p-4 text-light">
+    <div class="col-md-4">
+        <h2> About us</h2>
+        <p>look for a good job to lead a successful life full of fun so that you can be graet.</p>
+        <p>good work comes with challenges which you must face</p>
+    </div>
+    <div class="col-md-4">
+        <form action="">
+        <h2> contact us</h2>
+        <input type="email" placeholder="enter email" class="form-control"><br><br>
+        <textarea name="" id="" cols="15" rows="5" placeholder="leave a comment" class="form-control"></textarea><br>
+        <button class=" btn bg-danger text-light">send a message</button>
+    </div>
+    </form>
+    <div class="col-md-4 text-dark"> 
+    <h2 class="text-light"> stay connected</h2>
+         <img src="../static/images/fb.png" class="spin" alt=" facebook">
+         <img src="../static/images/in.png" class="spin" alt="instagram">
+         <img src="../static/images/x.png" class="spin" alt="x">
+         <img src="../static/images/Untitled.png" class="spin" alt="tiktok" width="60px" height="60px">
+            <p> kindly use any of this apps to make you work easier and have full information about the recent trends in the market</p>
+        </div>
+</section>
+<footer class="p-4 text-center bg-dark text-light"> <b>Developed by elisha.&copy;2024.All Rights Reserved </b></footer>
+
+
+
+
+
+
+
+    
+    </div>                                   
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single</title>
+    <!-- css suporting files  -->
+    <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/files/css/lightslider.css">
+    <link rel="stylesheet" href="../static/files/css/style.css">
+
+    <!-- js surporting files  -->
+    <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/files/js/jquery.js"></script>
+    <script src="../static/files/js/lightslider.js"></script>
+    <script src="../static/files/js/script.js"></script>
+
+    <link rel="stylesheet" href="../static/files/css/bootstrap.css">
+    <style>
+
+        img{
+
+            transition: 1s;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .spin {
+            display: inline-block;
+            animation: spinY 5s alternate linear infinite;
+        }
+    
+        @keyframes spinY {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+        
+        
+    </style>
+    
+</head>
+<body background="../static/images/kids-elephant-wallpaper-watercolor-_or-nurse_g08kawt2bqx4zn_3d_3d_0.webp">
+    <!-- link navbar  -->
+    {% include "navbar.html"%}
+    <div class="container-fluid">
+
+        <section class="row">
+            <div class="col-md-6">
+                <img src="../static/images/{{site[6]}}" alt="" class="spin" width="99%" height="99%">
+                <br>
+                <h3 class="text-success">{{site[1]}}</h3>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-success">{{site[2]}}</h4>
+                <h3 class="text-secondary">{{site[1]}}</h3>
+                <h4 class="text-danger">{{site[4]}}</h4>
+                <h4 class="text-primary" style="text-decoration: solid;">{{site[3]}}</h4>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-6">
+                {% if session["key"]%}
+                    <form action="/mpesa" method="post">
+                     <fieldset>
+                       
+                       <input type="tel" name="phone" placeholder="mpesa no" required id="" class="form-control">
+                       <br>
+                       <input type="number" name="amount" readonly placeholder=" " value="{{site[4]}}" required   id="" class="form-control">
+                       <br>
+                       <input type="submit" value="pay now" class="btn btn-primary">
+                       
+                      </fieldset>
+                    </form>
+                
+                {% else %}
+                <br><br>
+                    <b><h1>please login to make payment</h1></b>
+                    <a href="/login" class="btn btn-primary">login</a>
+                {% endif %}
+            </div>
+        </section>
+        <br><br><br>
+        {%include "footer.html"%}
+    </div>
+
+</body>
+</html>

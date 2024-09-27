@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload</title>
+    <link rel="stylesheet" href="../static/files/css/bootstrap.css">
+</head>
+<body background="../static/images/6511cd9a0679c_com.truecaller-384x384.png">
+    {% include "navbar.html" %}
+    <div class="container">
+        <section class="row mt-5">
+            
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+               <div class="card shadow img-thumbnail">
+                 <div class="card-body bg-warning">
+                    <center><h3 class="text-success">upload tourist sites</h3></center> 
+                    <h5>only for use by authorised personells</h5>    
+                   <form action="/upload" method="post" enctype="multipart/form-data">
+                   <br>
+                    <input type="text" name="subject" placeholder="subject" required id="" class="form-control">
+                    <br>
+                    <select name="adventure_cartegory" id="" class="form-control">
+                        <option value="wildlife">WILDLIFE</option>
+                        <option value="historic_sites">HISTORIC_SITES</option>
+                        <option value="natural_features">NATURAL_FEATURES</option>
+                        <option value="native_tribes_and_traditions">NATIVE_TRIBES_AND_TRADITIONS</option>
+                    </select>
+                    <br>
+                    <textarea name="subject_description" placeholder="description" id="" required cols="30" rows="10" class="form-control"></textarea>
+                    <br>
+                    <input type="number" name="visit_cost" placeholder="cost" id="" class="form-control"><br>
+                    <input type="text" name="season" placeholder="season of visit" id="" class="form-control">
+                    <br>
+                    
+                    <input type="file" name="sites_image_name" id="" class="form-control">
+                    <br>
+                    <input type="submit" value="upload" class="btn btn-success">
+
+                  </form>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+                <b class="text-success">{{msg}}</b>
+            </div>
+        </section>
+        
+    </div>
+    <br><br><br><br>
+    {%include "footer.html"%}
+</body>
+</html>

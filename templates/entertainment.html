@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entertainment</title>
+     <!-- css suporting files  -->
+     <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/files/css/lightslider.css">
+     <link rel="stylesheet" href="../static/files/css/style.css">
+ 
+     <!-- js surporting files  -->
+     <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+     <script src="../static/files/js/jquery.js"></script>
+     <script src="../static/files/js/lightslider.js"></script>
+     <script src="../static/files/js/script.js"></script>
+    </script>
+    <style>
+
+        img{
+
+            transition: 1s;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .spin {
+            display: inline-block;
+            animation: spinY 5s alternate linear infinite;
+        }
+    
+        @keyframes spinY {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+        
+    </style>
+     
+    
+</head>
+<body class="">
+    <div class="container-fluid">
+      {% include "navbar.html" %}
+        <!-- carousel goes here  -->
+         <b><i><marquee behavior="" direction="" class="text-danger"> kenya is the place to be</marquee></i></b>
+        <section class="row" id="2">
+            <div class="col-md-12">
+                <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
+                   <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/images/caption.jpg" alt="image1" class="w-100 d-block" height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/kenyan-man-gets-innovative-launches-heated-swimming-pool-in-a-coldest-region-in-kenya.jpg" alt="image2" class="d-block w-100" height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/Fun-Family-Activities-at-Manda-Bay.jpg.webp" alt="image3" class="d-block w-100" height="600px">
+                    </div>
+                   </div>
+        
+                   <!-- carousel controls  -->
+                   <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+                   </a>
+                   <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                   </a>
+                </div>
+            </div>
+            </section><br><br>
+
+            <!-- CARD SECTION  -->
+           <i><h1>music industry</h1></i>
+            <section class="row">
+
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                          <img src="../static/images/photo2-860x499.jpg" alt="" width="96%" height="180px">
+                            <h2>kenyan music launch</h2>
+                            <P>this is one of the memorable occasions in kenya as they consists of newly composed and attractive songs whih therefore draws many from all parts of kenya to full attendancethough charged cheaply to enable all to afford the entrance fee.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/rBEe_GHEvFGAJ1bUAAFGocz6wk0327.jpg" alt="" width="96%" height="171px" class="spin">
+                            <h2>awarding artists</h2>
+                            <P> local artists are awarded at every end of of a season due to their exemplery performance and innovative writing skills making their contents to trend beyond the borders of the country. they also play an important role in making sure that all people are relieved of their stress while listening to those songs.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/00471363 108d878edda18ce4a251ee2f972fe105 arc614x376 w735 us1.jpg" alt="" width="96%" height="175px">
+                            <h3>musical instruments</h3>
+                            <P> these are some of the musical flavours with best sounds that are strategically used by musicians to create attractive tracks. they are presented live when the musicians performs infront of their audience. it has proven the courage of the locals to perform without the assistance of editing of their vocal sounds.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-warning">
+                            <img src="../static/images/F5LHCCKFRFPTDOHX5SKXEAHP2A.jpg" alt="" width="96%" height="172px" class="spin">
+                            <h2>foreighn artists</h2>
+                            <P>these are international artist who are invited into the country by their fans so that they can perform live to their audience. they ussually come into the country during festive seasons to make life enjoyable to their fans and also to gain popularity among many others and also to create a good relations and act as motivation to local artist.  </P>
+                        </div>
+                    </div>
+                </div>
+            </section><br><br>
+            <i><h1>transport system</h1></i>
+            <section class="row">
+
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                          <img src="../static/images/a74dbaacc59143843c440028d61ed057.jpg" alt="" width="96%" height="194px">
+                            <h2>the nganyas</h2>
+                            <P>these are some of the pimped buses that attracts tourists from every part of the world to enjoy their springy moves and music played in them that are so relaxing and relieving stress for those who are frustrated </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                            <img src="../static/images/imagesnd.jpg" alt="" width="96%" class="spin" height="194px">
+                            <h2>ndudhi nganya</h2>
+                            <P>these are some of the attractive kenyan motorbikes that are piped to attract customers. they carry with them speakers that are loud to play some of the trending songs to sooth their customers during the ride  </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                            <img src="../static/images/kenya_sgr.jpg" alt="" width="96%" height="194px">
+                            <h2>kenyan sgr</h2>
+                            <P>this one of the fastest electric trains in africa. it was constructed in partnership with china to minimise the reliance on fuel as a source of energy as there has always fluctcation in fuel supply due to some political disagreement</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+        
+                    <div class="card shadow">
+                        <div class="card-body bg-info">
+                            <img src="../static/images/imagespl.jpg" alt="" class="spin" width="96%" height="170px">
+                            <h2>local airlines</h2>
+                            <P>these local airlines airlifts passengers to any part of the country and to other places of their visit. these flights are very affordable as they are regulated by the national flight committee to encourage and promote air trasport among the citizens  </P>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+            <i><h1>kenyan liquar</h1></i>
+            <section class="row" >
+
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                        <img src="../static/images/718oQrO3FHL.jpg" alt="" width="96%" height="155px">
+                          <h2>tusker</h2>
+                          <P>it is the oldest kenyan breewing company with an exemplery liquar production over many years and their all time engagement in community development by innitiating economic plans to promote local talents through sports and music industry.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                          <img src="../static/images/imagesch.jpg" alt="" width="96%" height="155px" class="spin">
+                          <h2>chrome</h2>
+                          <P>this is one of the most liked and wildly consumed liquar in kenyan entertainment market due to its taste that its user say to be good. its locally made thus promoting local companies and creating employments to locals in the country.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                          <img src="../static/images/dom-perignon.webp" alt="" width="96%" height="176px">
+                          <h2>vine</h2>
+                          <P>this is a liquar made from a vine tree in kenyan vine plantation and undertaken through seasoning and fermentation to result in the final product making it an enjoyable yet cheap kenyan liquar with a powerful tourist attraction capability.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-primary">
+                          <img src="../static/images/Marylebone-Gin.webp" alt="" width="96%" height="155px" class="spin">
+                          <h2>gin</h2>
+                          <P>Gin is a bluish liquar with a high ethanol content making it prefferd to be used in small quantities as it can result into unexpected side effects if used in excess. despite these limitations its still used by a large number of youths to express wealth.</P>
+                      </div>
+                  </div>
+              </div>
+            </section><br><br><br>
+            <i><h1>kenyan meals</h1></i>
+            <section class="row">
+
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                        <img src="../static/images/imagesdish.jpg" alt="" width="96%" height="225px">
+                          <h2>ugali samaki</h2>
+                          <P>this meal is composed of carbohydrate and vitamin with an extra protein inform of a fish making it even more delicious than you can never think of. this meals leaves most of the customers salivating and ready to even order more and more furthermore cheaply purchased.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/samosa.png" alt="" width="96%" height="225px" class="spin">
+                          <h2>samosa</h2>
+                          <P>samosa are also tered as pizza children due to their good looking and delicious taste as within them are good and well cooked dengu seasoned with many other delicacies like onions and chilies making them taste good before they are fried and served to customers who love them alot.</P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/78d1f1e2787982ab2b12d07a6a473659.jpg" alt="" width="96%" height="225px">
+                          <h2>choma</h2>
+                          <P>choma is a fried meat and seasoned with more deicacies making it much attractive and much sweeter than its visual impression thus is liked by many people as it is composed local meat and not genetically modified one. the meal is cheap making it affordable by many. </P>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+      
+                  <div class="card shadow">
+                      <div class="card-body bg-success">
+                          <img src="../static/images/imagesukuma.jpg" alt="" class="spin" width="96%" height="225px">
+                          <h2>ugali sukuma</h2>
+                          <P>this is also an african origin meal with ugali and well cooked sukuma with milk making it even much more nutritious. the sukuma is also cooked with tomatoes that seasons it further. this meal is cheap thus affordable to many as it is one of the kenyan staple foods. </P>
+                      </div>
+                  </div>
+              </div>
+            </section><br><br><br>
+            <i><h1>kenyan betting</h1></i>
+            <section class="row">
+
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                      <img src="../static/images/betika.png" alt="" width="96%" height="178px">
+                        <h2>betika</h2>
+                        <P>betika is one of the oldest betting clubs that has gifted alot of kenyans with millions of money. betika has also promoted local football clubs with neccesary training facilities to increase their playing skills in football so that they can be involved internationally in soccer games.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                        <img src="../static/images/imagesxbet.jpg" alt="" width="96%" height="178px" class="spin">
+                        <h2>1xbet</h2>
+                        <P>this betting is based on sports and most of its users are attached to football due easy prediction and yielding of much money to many football fans thus helping them alot. it involve foundation work among the community members thus promoting their living standards.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                        <img src="../static/images/imagesav.jpg" alt="" width="96%" height="178px">
+                        <h2>aviator</h2>
+                        <P>this is a lucrative yet full of loses type of betting if you are not that keen. the unexpected is that others find it beneficial as it multiplies their money yielding them thousands of cash disputing the public iage of the game. its adviced to be played responsibly as it can lead to loses.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+    
+                <div class="card shadow">
+                    <div class="card-body bg-danger">
+                        <img src="../static/images/dd73480c-6248-4372-ac5c-a17c7bf9069f.avif" class="spin" alt="" width="96%" height="178px">
+                        <h2>casino</h2>
+                        <P>casino is one of the expensive bettings undertaken by kenyan millionaires. they are well known for thier distractive environment that can hold customers for a whole day and the fast passing of tie than the outside world and can robb one of all his wealth making them poor. </P>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+   <br>
+ 
+
+<section class="row bg-warning p-4 text-light">
+    <div class="col-md-4">
+        <h2> About us</h2>
+        <p>look for a good job to lead a successful life full of fun so that you can be graet.</p>
+        <p>good work comes with challenges which you must face</p>
+    </div>
+    <div class="col-md-4">
+        <form action="">
+        <h2> contact us</h2>
+        <input type="email" placeholder="enter email" class="form-control"><br><br>
+        <textarea name="" id="" cols="15" rows="5" placeholder="leave a comment" class="form-control"></textarea><br>
+        <button class=" btn bg-danger text-light">send a message</button>
+    </div>
+    </form>
+    <div class="col-md-4 text-dark"> 
+    <h2 class="text-light"> stay connected</h2>
+         <img src="../static/images/fb.png" alt=" facebook" class="spin">
+         <img src="../static/images/in.png" alt="instagram" class="spin">
+         <img src="../static/images/x.png" alt="x" class="spin">
+         <img src="../static/images/Untitled.png" class="spin" alt="tiktok" width="60px" height="60px">
+            <p> kindly use any of this apps to make you work easier and have full information about the recent trends in the market</p>
+        </div>
+</section>
+<footer class="p-4 text-center bg-dark text-light"> <b>Developed by elisha.&copy;2024.All Rights Reserved </b></footer>
+
+
+
+
+
+
+
+    
+    </div>                                     
+</body>
+</html>
